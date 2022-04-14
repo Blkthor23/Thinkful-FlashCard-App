@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function DeckList({ decks, setDecks }) {
 //React Hooks ////////////
   useEffect(() => {
-    listDecks().then(setDecks).then((decks) => console.log(decks))
+    listDecks().then(setDecks).then((decks) => decks)
 }, [setDecks]);
 // End of React Hooks //////////
 

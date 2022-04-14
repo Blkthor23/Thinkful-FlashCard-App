@@ -36,7 +36,6 @@ function handleChange({ target }) {
   async function handleSubmit(event) {
     event.preventDefault();
     await updateDeck(formData);
-    console.log(formData);
     setFormData({ ...initialFormState });
     history.push(`/decks/${deckId}`);
   }

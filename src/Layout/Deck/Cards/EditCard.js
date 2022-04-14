@@ -23,7 +23,7 @@ export default function EditCard() {
         deckId: response.deckId,
       });
     });
-  }, []);
+  }, [cardId, deckId]);
 
   function handleChange({ target }) {
     setFormData({

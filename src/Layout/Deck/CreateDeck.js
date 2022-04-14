@@ -12,7 +12,7 @@ export default function CreateDeck({ decks, setDecks }) {
 
   useEffect(() => {
     listDecks().then(setDecks).catch((err) => err) 
-}, []);
+}, [setDecks]);
 
   function handleChange({ target }) {
     setFormData({
